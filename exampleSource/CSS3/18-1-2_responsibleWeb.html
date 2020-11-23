@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>rem과 em의 차이</title>
+<link rel="stylesheet" href="./cssEx/cssReset.css" />
+<style>
+html{font-size:10px}
+/*위의 라인은 책에 body라고 되어있으며 오타이므로 html로 인식해 주세요.*/
+/*rem단위는 body태그가 아닌 html태그에 있는 font-size값을 기준으로 조정됩니다. */
+/*html태그에 font-size가 미적용인 경우 브라우저 기본 사이즈가 적용됩니다. */
+.parent{font-size:3rem}
+.child{font-size:2em}
+.child2{font-size:2rem}
+</style>
+</head>
+<body>
+  <p>i am nothing [10px]</p>
+  <div class="parent">
+    i am parent [3rem]
+    <p class="child">i am child [2em]</p>
+    <p class="child2">i am child2 [2rem]</p>
+  </div>
+</body>
+</html>
